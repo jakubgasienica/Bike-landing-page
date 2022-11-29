@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+$roboto: Roboto, sans-serif;
+$yellow: #cdd43c;
+$light-yellow: #f7f9dd;
+$black: #3a3a3a;
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+body {
+	font-family: $roboto;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	font-size: 1.6rem;
+}
+
+.container {
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.btn {
+	background-color: $yellow;
+	font-size: 2rem;
+	&:hover {
+		background-color: $yellow;
+		font-weight: 500;
+		-webkit-box-shadow: 0px 6px 10px -5px rgba(66, 68, 90, 1);
+		-moz-box-shadow: 0px 6px 10px -5px rgba(66, 68, 90, 1);
+		box-shadow: 0px 6px 10px -5px rgba(66, 68, 90, 1);
+	}
+}
+
+.home {
+	background-image: url("/assets/fotOne.jpg");
+	background-size: cover;
+	background-position: center;
+
+	@media screen and (max-width: $sm) {
+		height: 200px;
+	}
+	@media screen and (min-width: $sm) and (max-width: $md) {
+		height: 400px;
+	}
+	@media screen and (min-width: $md) and (max-width: $lg) {
+		height: 600px;
+	}
+	@media screen and (min-width: $lg) and (max-width: $xl) {
+		height: 800px;
+	}
+	@media screen and (min-width: $xl) and (max-width: $xxl) {
+		height: 900px;
+	}
+	@media screen and (min-width: $xxl) {
+		height: 1000px;
+	}
+
+	.home-title {
+		padding-top: 10%;
+		color: $yellow;
+		letter-spacing: 0.5rem;
+		text-transform: uppercase;
+		top: 20px;
+		font-size: 5vw;
+	}
+}
+
+.btn-secondary {
+	border: none;
+	border-radius: 0;
+	border-bottom: $yellow solid 2px;
+	color: #1d1d1b;
+	background-color: transparent;
+	&:hover {
+		color: #1d1d1b;
+		font-weight: 500;
+		border-radius: 0.375rem;
+		border-bottom: $yellow solid 2px;
+		-webkit-box-shadow: 0px 6px 10px -5px rgba(66, 68, 90, 1);
+		-moz-box-shadow: 0px 6px 10px -5px rgba(66, 68, 90, 1);
+		box-shadow: 0px 6px 10px -5px rgba(66, 68, 90, 1);
+	}
+}
+
+.ms-auto {
+	margin-left: 0;
+}
+
+.question-p {
+	font-weight: 700;
+}
+
+.question-title {
+	background-color: $yellow;
+}
+
+.level-describe {
+	background-color: $light-yellow;
+}

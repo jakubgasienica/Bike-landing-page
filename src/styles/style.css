@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+body {
+  font-family: Roboto, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #cdd43c;
+  font-size: 2rem;
+}
+.btn:hover {
+  background-color: #cdd43c;
+  font-weight: 500;
+  box-shadow: 0px 6px 10px -5px rgb(66, 68, 90);
+}
+
+.home {
+  background-image: url("/assets/fotOne.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 576px) {
+  .home {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .home {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .home {
+    height: 600px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .home {
+    height: 800px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .home {
+    height: 900px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .home {
+    height: 1000px;
+  }
+}
+.home .home-title {
+  padding-top: 10%;
+  color: #cdd43c;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  top: 20px;
+  font-size: 5vw;
+}
+
+.btn-secondary {
+  border: none;
+  border-radius: 0;
+  border-bottom: #cdd43c solid 2px;
+  color: #1d1d1b;
+  background-color: transparent;
+}
+.btn-secondary:hover {
+  color: #1d1d1b;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  border-bottom: #cdd43c solid 2px;
+  box-shadow: 0px 6px 10px -5px rgb(66, 68, 90);
+}
+
+.ms-auto {
+  margin-left: 0;
+}
+
+.question-p {
+  font-weight: 700;
+}
+
+.question-title {
+  background-color: #cdd43c;
+}
+
+.level-describe {
+  background-color: #f7f9dd;
+}/*# sourceMappingURL=style.css.map */
