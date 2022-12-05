@@ -2,7 +2,7 @@
 
 $roboto: Roboto, sans-serif;
 $yellow: #cdd43c;
-$light-yellow: #f7f9dd;
+$light-yellow: #d0d495;
 $black: #3a3a3a;
 $xs: 0;
 $sm: 576px;
@@ -10,7 +10,9 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px;
-
+.primary-color {
+	background-color: $yellow;
+}
 body {
 	font-family: $roboto;
 }
@@ -31,6 +33,7 @@ body {
 .btn {
 	background-color: $yellow;
 	font-size: 2rem;
+	border-radius: 0;
 	&:hover {
 		background-color: $yellow;
 		font-weight: 500;
@@ -44,6 +47,7 @@ body {
 	background-image: url("/assets/fotOne.jpg");
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 
 	@media screen and (max-width: $sm) {
 		height: 200px;
@@ -99,10 +103,89 @@ body {
 	font-weight: 700;
 }
 
-.question-title {
+.level-title,
+.qustion-benefit,
+.galery-title {
+	display: inline-block;
 	background-color: $yellow;
 }
 
 .level-describe {
 	background-color: $light-yellow;
+}
+
+.benefits-foto {
+	background-image: url("/assets/fotTwo.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	@media screen and (max-width: $sm) {
+		height: 200px;
+	}
+	@media screen and (min-width: $sm) and (max-width: $md) {
+		height: 400px;
+	}
+	@media screen and (min-width: $md) and (max-width: $lg) {
+		height: 500px;
+	}
+	@media screen and (min-width: $lg) and (max-width: $xl) {
+		height: 600px;
+	}
+	@media screen and (min-width: $xl) and (max-width: $xxl) {
+		height: 700px;
+	}
+	@media screen and (min-width: $xxl) {
+		height: 800px;
+	}
+}
+
+.benefits-box {
+	border: solid 2px $yellow;
+}
+
+.instructors-foto {
+	background-image: url("/assets/fotThree.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	@media screen and (max-width: $sm) {
+		height: 200px;
+	}
+	@media screen and (min-width: $sm) and (max-width: $md) {
+		height: 400px;
+	}
+	@media screen and (min-width: $md) and (max-width: $lg) {
+		height: 500px;
+	}
+	@media screen and (min-width: $lg) and (max-width: $xl) {
+		height: 600px;
+	}
+	@media screen and (min-width: $xl) and (max-width: $xxl) {
+		height: 700px;
+	}
+	@media screen and (min-width: $xxl) {
+		height: 800px;
+	}
+}
+a {
+	text-decoration: none;
+}
+.link {
+	color: $black;
+	direction: none;
+	border-bottom: solid 2px $light-yellow;
+	width: fit-content;
+	&:hover {
+		direction: none;
+	}
+	&:visited {
+		color: $black;
+	}
+}
+.footer-logo-title {
+	font-size: 2rem;
+}
+.footer-logo-title {
+	font-size: 3rem;
 }
